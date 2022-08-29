@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+   <testsuites id="20140612_170519" name="New_configuration (14/06/12 17:05:19)" tests="225" failures="1262" time="0.001">
+      <testsuite id="codereview.cobol.analysisProvider" name="COBOL Code Review" tests="45" failures="17" time="0.001">
+         <testcase classname="MyTest" id="codereview.cobol.rules.ProgramIdRule" name="test_program_name_matches_source_file" time="0.001">
+            <failure message="PROGRAM.cbl:2 Use a program name that matches the source file name" type="WARNING">
+WARNING: Use a program name that matches the source file name
+Category: COBOL Code Review – Naming Conventions
+File: /project/PROGRAM.cbl
+Line: 2
+      </failure>
+    </testcase>
+    <testcase classname="MyTest" id="codereview.cobol.rules.ProgramIdRule" name="test_method1" time="0.001">
+    <properties>
+    	<property name="polarion-testcase-id" value="OCS-1298"/>
+        <property name="polarion-testcase-name" value="test_method1"/>
+    </properties>
+    </testcase>
+    <testcase classname="MyTest" id="codereview.cobol.rules.ProgramIdRule" name="test_method2" time="0.001">
+    <properties>
+        <property name="polarion-testcase-id" value="OCS-1299"/>
+    </properties>
+    </testcase>
+    <testcase classname="MyTest" id="codereview.cobol.rules.ProgramIdRule" name="test_method3" time="0.001">
+            <failure message="PROGRAM.cbl:2 Use a program name that matches the source file name" type="WARNING">
+WARNING: Use a program name that matches the source file name
+Category: COBOL Code Review – Naming Conventions
+File: /project/PROGRAM.cbl
+Line: 2
+      </failure>
+    </testcase>
+    <testcase classname="MyTest" id="codereview.cobol.rules.ProgramIdRule" name="test_method4" time="0.001"/>
+    <testcase classname="MyTest" id="codereview.cobol.rules.ProgramIdRule" name="test_method5" time="0.001"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,59 @@
+{
+  "type": "brew-build",
+  "status": "failed",
+  "xunit_s3_url": "",
+  "contact": {
+    "name": "BaseOS CI",
+    "team": "BaseOS",
+    "url": "https://somewhere.com",
+    "docs": "https://somewhere.com/user-documentation",
+    "irc": "#baseosci",
+    "email": "baseos-ci@somewhere.com"
+  },
+  "run": {
+    "url": "https://somewhere.com/job/ci-openstack/4794",
+    "log": "https://somewhere.com/job/ci-openstack/4794/console",
+    "log_raw": "https://somewhere.com/job/ci-openstack/4794/consoleText",
+    "log_stream": "https://somewhere.com/job/ci-openstack/4794/consoleText",
+    "debug": "https://somewhere.com/job/ci-openstack/4794/artifacts/debug.txt",
+    "rebuild": "https://somewhere.com/job/ci-openstack/4794/rebuild/parametrized"
+  },
+  "artifact": {
+    "type": "brew-build",
+    "id": 14546276,
+    "issuer": "ovasik",
+    "component": "setup",
+    "nvr": "setup-2.8.71-7.el7_4",
+    "scratch": true,
+    "dependencies": ["gcc-3.8.2-1.el7", "make-2.3.1-2.el7_4"],
+    "baseline": "setup-2.8.71-6.el7_4",
+    "source": "git+https://src.fedoraproject.org/rpms/setup.git?#5e0ae23a"
+  },
+  "pipeline": {
+    "id": "ac11dcddf99a",
+    "name": "ci-openstack"
+  },
+  "test": {
+    "category": "functional",
+    "docs": "https://my-ci-system/docs/contribute-retrigger-reproduce",
+    "label": [ "fast", "aarch64" ],
+    "namespace": "baseos-qe.baseos-ci",
+    "note": "Some notes.",
+    "result": "failed",
+    "type": "tier1",
+    "xunit": "https://somewhere.com/job/ci-openstack/4794/artifacts/results.xml"
+  },
+  "system":
+     [{
+        "os": "rhel-7.4-server-x86_64-updated",
+        "provider": "openstack",
+        "architecture": "x86_64",
+        "variant": "Server",
+        "label": "master"
+     }],
+  "notification": {
+      "recipients": [ "ovasik", "mvadkert" ]
+  },
+  "generated_at": "2018-05-10 08:58:31.222602",
+  "version": "0.2.1"
+}
